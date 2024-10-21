@@ -166,7 +166,7 @@ Describe other people represented or mentioned in the data. Where possible, link
 
 ### Annotations
 
-[More Information Needed]
+Captions were added to the Ukio-e face dataset using BLIP2 ([`Salesforce/blip2-opt-2.7b`](https://huggingface.co/Salesforce/blip2-opt-2.7b)).
 
 <!-- If the dataset contains annotations which are not part of the initial data collection, describe them in the following paragraphs. -->
 
