@@ -1,9 +1,24 @@
-<!-- 
 ---
-TODO: YAML tags (full spec here: https://github.com/huggingface/hub-docs/blob/main/datasetcard.md?plain=1):
-- copy-paste the tags obtained with the online tagging app: https://huggingface.co/spaces/huggingface/datasets-tagging
+annotations_creators:
+- machine-generated
+language:
+- en
+language_creators:
+- found
+license:
+- cc-by-sa-4.0
+multilinguality:
+- monolingual
+pretty_name: ukiyo-e-face-blip2-captions
+size_categories:
+- 1K<n<10K
+source_datasets: []
+tags: []
+task_categories:
+- text-to-image
+task_ids: []
 --- 
--->
+
 
 # Dataset Card for ukiyo-e-face-blip2-captions
 
@@ -42,14 +57,12 @@ TODO: YAML tags (full spec here: https://github.com/huggingface/hub-docs/blob/ma
 
 ## Dataset Description
 
-- **Homepage:** Please input homepage information
+- **Homepage:** https://www.justinpinkney.com/blog/2020/ukiyoe-dataset/
 - **Repository:** https://github.com/py-img-gen/huggingface-datasets_ukiyo-e-face-blip2-captions
-- **Leaderboard:** [TODO: If the dataset supports an active leaderboard, add link here]()
-- **Point of Contact:** [TODO: If known, name and email of at least one person the reader can contact for questions about the dataset.]()
 
 ### Dataset Summary
 
-[More Information Needed]
+`ukiyo-e-face-blip2-captions` dataset is a dataset that adds captions to [Ukiyo-e face dataset](https://www.justinpinkney.com/blog/2020/ukiyoe-dataset/) using [BLIP2](https://arxiv.org/abs/2301.12597) model.
 
 <!-- Briefly summarize the dataset, its intended use and the supported tasks. Give an overview of how and why the dataset was created. The summary should explicitly mention the languages present in the dataset (possibly in broad terms, e.g. *translations between several pairs of European languages*), and describe the domain, topic, or genre covered. -->
 
@@ -63,7 +76,7 @@ TODO: YAML tags (full spec here: https://github.com/huggingface/hub-docs/blob/ma
 
 ### Languages
 
-[More Information Needed]
+The language data in ukiyo-e-face-blip2-captions is in English.
 
 <!-- Provide a brief overview of the languages represented in the dataset. Describe relevant details about specifics of the language such as whether it is social media text, African American English,...
 
@@ -73,7 +86,11 @@ When relevant, please provide [BCP-47 codes](https://tools.ietf.org/html/bcp47),
 
 ### Data Instances
 
-[More Information Needed]
+```python
+import datasets as ds
+
+dataset = ds.load_dataset("py-img-gen/ukiyo-e-face-blip2-captions")
+```
 
 <!-- Provide an JSON-formatted example and brief description of a typical instance in the dataset. If available, provide a link to further examples.
 
@@ -219,28 +236,25 @@ If analyses have been run quantifying these biases, please add brief summaries a
 
 ### Licensing Information
 
-[More Information Needed]
-
-<!-- Provide the license and link to the license webpage if available. -->
+This dataset is provided under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ### Citation Information
 
-<!-- Provide the [BibTex](http://www.bibtex.org/)-formatted reference for the dataset. For example:
-```
-@article{article_id,
-  author    = {Author List},
-  title     = {Dataset Paper Title},
-  journal   = {Publication Venue},
-  year      = {2525}
-}
-```
-
-If the dataset has a [DOI](https://www.doi.org/), please provide it here. -->
-
 ```bibtex
-TODO: Add BibTeX citation here
+@misc{pinkney2020ukiyoe,
+    author = {Pinkney, Justin N. M.},
+    title = {Aligned Ukiyo-e faces dataset},
+    year={2020},
+    howpublished={\url{https://www.justinpinkney.com/blog/2020/ukiyoe-dataset}}
+}
+@misc{kitada2024ukiyoe,
+    author = {Kitada, Shunsuke},
+    title = {Ukiyo-e face blip2 captions dataset},
+    year={2024},
+    howpublished={\url{https://huggingface.co/datasets/py-img-gen/ukiyo-e-face-blip2-captions/settings}}
+}
 ```
 
 ### Contributions
 
-<!-- TODO: Thanks to [@github-username](https://github.com/<github-username>) for adding this dataset. -->
+Thanks to [Justin Pinkney](https://www.justinpinkney.com/) for constructing [Ukiyo-e face dataset](https://www.justinpinkney.com/blog/2020/ukiyoe-dataset/).

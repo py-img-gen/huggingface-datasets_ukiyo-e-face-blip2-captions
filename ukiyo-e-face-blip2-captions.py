@@ -33,13 +33,13 @@ _CITATION = """\
     author = {Pinkney, Justin N. M.},
     title = {Aligned Ukiyo-e faces dataset},
     year={2020},
-    howpublished= {\\url{https://www.justinpinkney.com/blog/2020/ukiyoe-dataset}}
+    howpublished={\\url{https://www.justinpinkney.com/blog/2020/ukiyoe-dataset}}
 }
 @misc{kitada2024ukiyoe,
     author = {Kitada, Shunsuke},
     title = {Ukiyo-e face blip2 captions dataset},
     year={2024},
-    howpublished= {\\url{https://huggingface.co/datasets/py-img-gen/ukiyo-e-face-blip2-captions/settings}}
+    howpublished={\\url{https://huggingface.co/datasets/py-img-gen/ukiyo-e-face-blip2-captions/settings}}
 }
 """
 
